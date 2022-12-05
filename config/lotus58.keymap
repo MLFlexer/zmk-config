@@ -26,13 +26,6 @@
     };
 
     behaviors {
-        td0: shift_ctrlword_ctrl {
-            compatible = "zmk,behaviour-tap-dance";
-            label = "SHIFT_CTRLWORD_CTRL";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LSHFT, &caps_word, &kp CAPSLOCK>;
-        };
         fofunc: four_ffour {
             compatible = "zmk,behavior-mod-morph";
             label = "FOUR_FUNCFOUR";
