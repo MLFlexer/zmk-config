@@ -31,7 +31,7 @@
             label = "SHIFT_CTRLWORD_CTRL";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LSHFT, &caps_word, &kp CAPSLOCK>
+            bindings = <&kp LSHFT, &caps_word, &kp CAPSLOCK>;
         };
         fofunc: four_ffour {
             compatible = "zmk,behavior-mod-morph";
