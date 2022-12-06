@@ -11,7 +11,7 @@
 
 #define DEFAULT 0
 #define LOWER 1
-#define RAISE 2
+#define BLUETOOTH 2
 #define GAMER 3
 #define GAMER_2 4
 
@@ -76,7 +76,7 @@
    &kp TAB   &kp Q   &kp W      &kp E     &kp R      &kp T                            &kp Y       &kp U      &kp I    &kp O     &kp P        &kp LBKT
  &kp LSHFT   &kp A   &kp S      &kp D     &kp F      &kp G      &reset     &reset     &kp H       &kp J      &kp K    &kp L  &kp SEMI   &mt RSHFT SQT
  &kp LCTRL   &kp Z   &kp X      &kp C     &kp V      &kp B     &kp DEL   &kp C_PP     &kp N       &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RCTRL BSLH
-                            &lt 2 RET  &kp LALT  &kp SPACE  &lt 1 BSPC  &lt 2 RET  &kp BSPC  &lt 1 RBKT   &kp LGUI
+                            &lt BLUETOOTH  &kp LALT  &kp SPACE  &lt 1 BSPC  &lt 2 RET  &kp BSPC  &lt 1 RBKT   &kp LGUI
             >;
         };
 
@@ -107,9 +107,9 @@
 
             bindings = <
  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &out OUT_TOG  &out OUT_USB  &out OUT_BLE      &trans   &reset  &bootloader
-      &to 0       &kp INS     &kp PSCRN   &kp K_CMENU        &reset        &trans                     &kp PG_UP        &trans        &kp UP      &trans   &trans       &trans
-      &to 3      &kp LALT     &kp LCTRL     &kp LSHFT   &bootloader      &kp CLCK  &trans  &trans     &kp PG_DN      &kp LEFT      &kp DOWN   &kp RIGHT  &kp DEL     &kp BSPC
-      &to 4    &kp K_UNDO     &kp K_CUT    &kp K_COPY   &kp K_PASTE        &trans  &trans  &trans        &trans      &kp C_PP    &kp C_PREV  &kp C_NEXT   &trans       &trans
+      &to DEFAULT &kp INS     &kp PSCRN   &kp K_CMENU        &reset        &trans                     &kp PG_UP        &trans        &kp UP      &trans   &trans       &trans
+      &to GAMER      &kp LALT     &kp LCTRL     &kp LSHFT   &bootloader      &kp CLCK  &trans  &trans     &kp PG_DN      &kp LEFT      &kp DOWN   &kp RIGHT  &kp DEL     &kp BSPC
+      &to GAMER_2    &kp K_UNDO     &kp K_CUT    &kp K_COPY   &kp K_PASTE        &trans  &trans  &trans        &trans      &kp C_PP    &kp C_PREV  &kp C_NEXT   &trans       &trans
                                                &trans        &trans        &trans  &trans  &trans        &trans        &trans        &trans
             >;
         };
@@ -125,7 +125,7 @@
             bindings = <
    &kp ESC  &kp N1  &kp N2        &kp N3    &kp N4    &kp N5                            &kp N6      &kp N7     &kp N8   &kp N9    &kp N0       &kp EQUAL
    &kp TAB   &kp Q   &kp W         &kp E     &kp R     &kp T                             &kp Y       &kp U      &kp I    &kp O     &kp P        &kp LBKT
- &kp LSHFT   &kp A   &kp S         &kp D     &kp F     &kp G       &reset     &reset     &kp H       &kp J      &kp K    &kp L  &kp SEMI   &mt RSHFT SQT
+ &kp LSHFT   &kp A   &kp S         &kp D     &bootloader     &kp G       &reset     &reset     &kp H       &kp J      &kp K    &kp L  &kp SEMI   &mt RSHFT SQT
  &kp LCTRL   &kp Z   &kp X         &kp C     &kp V     &kp B  &lt 2 RET   &kp C_PP     &kp N       &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RCTRL BSLH
                             &kp LEFT_WIN  &kp LALT  &kp BSPC    &kp SPACE  &lt 2 RET  &kp BSPC  &lt 1 RBKT   &kp LGUI
             >;
@@ -142,7 +142,7 @@
             bindings = <
  &kp N5    &kp ESC  &kp N1        &kp N2    &kp N3    &kp N4                            &kp N6      &kp N7     &kp N8   &kp N9    &kp N0       &kp EQUAL
   &kp T    &kp TAB   &kp Q         &kp W     &kp E     &kp R                             &kp Y       &kp U      &kp I    &kp O     &kp P        &kp LBKT
-  &kp G  &kp LSHFT   &kp A         &kp S     &kp D     &kp F       &reset     &reset     &kp H       &kp J      &kp K    &kp L  &kp SEMI   &mt RSHFT SQT
+  &kp G  &kp LSHFT   &kp A         &kp S     &bootloader     &kp F       &reset     &reset     &kp H       &kp J      &kp K    &kp L  &kp SEMI   &mt RSHFT SQT
   &kp B  &kp LCTRL   &kp Z         &kp X     &kp C     &kp V  &lt 2 RET   &kp C_PP     &kp N       &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RCTRL BSLH
                             &kp LEFT_WIN  &kp LALT  &kp BSPC    &kp SPACE  &lt 2 RET  &kp BSPC  &lt 1 RBKT   &kp LGUI
             >;
