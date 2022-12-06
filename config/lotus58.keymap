@@ -7,7 +7,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/outputs.h>//definitions:
+#include <dt-bindings/zmk/outputs.h>
+
 #define DEFAULT 0
 #define LOWER 1
 #define RAISE 2
@@ -121,11 +122,11 @@
             // 52                    |ENT RS|  ALT | SPACE|DELETE LW|  |ENTER RS| BSPC |  ] LW | RGUI  |                        59
 
             bindings = <
-   &kp ESC  &kp N1  &kp N2          &kp N3    &kp N4    &kp N5                          &kp N6      &kp N7     &kp N8   &kp N9    &kp N0       &kp EQUAL
-   &kp TAB   &kp Q   &kp W           &kp E     &kp R     &kp T                           &kp Y       &kp U      &kp I    &kp O     &kp P        &kp LBKT
- &kp LSHFT   &kp A   &kp S           &kp D     &kp F     &kp G     &reset     &reset     &kp H       &kp J      &kp K    &kp L  &kp SEMI   &mt RSHFT SQT
- &kp LCTRL   &kp Z   &kp X           &kp C     &kp V     &kp B  &kp ENTER   &kp C_PP     &kp N       &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RCTRL BSLH
-                            &lt 2 LEFT_GUI  &kp LALT  &kp BSPC  &kp SPACE  &lt 2 RET  &kp BSPC  &lt 1 RBKT   &kp LGUI
+   &kp ESC  &kp N1  &kp N2        &kp N3    &kp N4    &kp N5                            &kp N6      &kp N7     &kp N8   &kp N9    &kp N0       &kp EQUAL
+   &kp TAB   &kp Q   &kp W         &kp E     &kp R     &kp T                             &kp Y       &kp U      &kp I    &kp O     &kp P        &kp LBKT
+ &kp LSHFT   &kp A   &kp S         &kp D     &kp F     &kp G       &reset     &reset     &kp H       &kp J      &kp K    &kp L  &kp SEMI   &mt RSHFT SQT
+ &kp LCTRL   &kp Z   &kp X         &kp C     &kp V     &kp B  &lt 2 ENTER   &kp C_PP     &kp N       &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RCTRL BSLH
+                            &kp LEFT_WIN  &kp LALT  &kp BSPC    &kp SPACE  &lt 2 RET  &kp BSPC  &lt 1 RBKT   &kp LGUI
             >;
         };
 
@@ -138,11 +139,11 @@
             // 52                    |ENT RS|  ALT | SPACE|DELETE LW|  |ENTER RS| BSPC |  ] LW | RGUI  |                        59
 
             bindings = <
-&kp N5  &kp ESC   &kp N1  &kp N2     &kp N3    &kp N4                              &kp N6      &kp N7     &kp N8   &kp N9    &kp N0       &kp EQUAL
-&kp T   &kp TAB   &kp Q   &kp W      &kp E     &kp R                               &kp Y       &kp U      &kp I    &kp O     &kp P        &kp LBKT
-&kp G &kp LSHFT   &kp A   &kp S      &kp D     &kp F         &reset     &reset     &kp H       &kp J      &kp K    &kp L  &kp SEMI   &mt RSHFT SQT
-&kp B &kp LCTRL   &kp Z   &kp X      &kp C     &kp V      &kp ENTER   &kp C_PP     &kp N       &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RCTRL BSLH
-                            &lt 2 LEFT_GUI  &kp LALT  &kp BSPC  &kp SPACE  &lt 2 RET  &kp BSPC  &lt 1 RBKT   &kp LGUI
+ &kp N5    &kp ESC  &kp N1        &kp N2    &kp N3    &kp N4                            &kp N6      &kp N7     &kp N8   &kp N9    &kp N0       &kp EQUAL
+  &kp T    &kp TAB   &kp Q         &kp W     &kp E     &kp R                             &kp Y       &kp U      &kp I    &kp O     &kp P        &kp LBKT
+  &kp G  &kp LSHFT   &kp A         &kp S     &kp D     &kp F       &reset     &reset     &kp H       &kp J      &kp K    &kp L  &kp SEMI   &mt RSHFT SQT
+  &kp B  &kp LCTRL   &kp Z         &kp X     &kp C     &kp V  &lt 2 ENTER   &kp C_PP     &kp N       &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RCTRL BSLH
+                            &kp LEFT_WIN  &kp LALT  &kp BSPC    &kp SPACE  &lt 2 RET  &kp BSPC  &lt 1 RBKT   &kp LGUI
             >;
         };
     };
