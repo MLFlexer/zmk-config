@@ -126,7 +126,7 @@
    &kp ESC  &kp N1  &kp N2        &kp N3       &kp N4    &kp N5                          &kp N6      &kp N7     &kp N8   &kp N9    &kp N0       &kp EQUAL
    &kp TAB   &kp Q   &kp W         &kp E        &kp R     &kp T                           &kp Y       &kp U      &kp I    &kp O     &kp P        &kp LBKT
  &kp LSHFT   &kp A   &kp S         &kp D  &bootloader     &kp G     &reset     &reset     &kp H       &kp J      &kp K    &kp L  &kp SEMI   &mt RSHFT SQT
- &kp LCTRL   &kp Z   &kp X         &kp C        &kp V     &kp B  &lt 0 RET   &kp C_PP     &kp N       &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RCTRL BSLH
+ &kp LCTRL  &tog 2   &to 2       &lt 2 C        &mo 2     &kp B  &lt 0 RET   &kp C_PP     &kp N       &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RCTRL BSLH
                             &kp LEFT_WIN     &kp LALT  &kp BSPC  &kp SPACE  &lt 2 RET  &kp BSPC  &lt 1 RBKT   &kp LGUI
             >;
         };
