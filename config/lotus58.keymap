@@ -12,12 +12,11 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_dsklg {
-            timeout-ms = <100>;
-            key-positions = <24 52>;
-            layers = <0>;
-            bindings = <&kp LGUI>;
-        };        
+
+        new_combo {
+            bindings = <&trans>;
+            key-positions = <>;
+        };
     };
 
     behaviors {
@@ -55,11 +54,11 @@
 // 38|  CTRL |  Z  |  X  |  C   |  V   |  B   |  MUTE   |  | PLAY   |  N   |  M    |  ,    |  .   |   /   | \ CTRL| 51
 // 52                    |ENT RS|  ALT | SPACE|DELETE LW|  |ENTER RS| BSPC |  ] LW | RGUI  |                        59
             bindings = <
-&kp ESC   &kp N1 &kp N2   &kp N3     &fofunc   &kp N5                               &kp N6    &kp N7      &kp N8    &kp N9   &kp N0   &kp EQUAL
-&kp TAB   &kp Q  &kp W    &kp E      &kp R     &kp T                                &kp Y     &kp U       &kp I     &kp O    &kp P    &kp LBKT
-&kp LSHFT &kp A  &sleft   &kp D      &fright   &kp G      &reset         &reset     &kp H     &kp J       &kp K     &kp L    &kp SEMI &mt RSHFT SQT
-&kp LCTRL &kp Z  &kp X    &kp C      &kp V     &kp B      &kp C_MUTE     &kp C_PP   &kp N     &kp M       &kp COMMA &kp DOT  &kp FSLH &mt RCTRL BSLH
-                          &lt 2 RET  &kp LALT  &kp SPACE  &lt 1 DEL      &lt 2 RET  &kp BSPC  &lt 1 RBKT  &kp LGUI  
+        &kp ESC  &kp N1  &kp N2          &kp N3    &kp N4     &kp N5                               &kp N6      &kp N7     &kp N8   &kp N9    &kp N0    &kp QUESTION
+        &kp TAB   &kp Q   &kp W           &kp E     &kp R      &kp T                                &kp Y       &kp U      &kp I    &kp O     &kp P        &kp LBKT
+      &kp LCTRL   &kp A   &kp S           &kp D     &kp F      &kp G       &reset        &reset     &kp H       &kp J      &kp K    &kp L  &kp SEMI   &mt RSHFT SQT
+ &kp LEFT_SHIFT   &kp Z   &kp X           &kp C     &kp V      &kp B      &kp DEL      &kp C_PP     &kp N       &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RCTRL BSLH
+                                 &lt 2 LEFT_WIN  &kp LALT  &kp SPACE  &lt 1 ENTER  &lt 2 DELETE  &kp BSPC  &lt 1 RBKT   &kp LGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
