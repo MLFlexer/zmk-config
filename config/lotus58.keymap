@@ -104,14 +104,34 @@
             //                     |       |       |      |      |  |      |      |      |       |       
 
             bindings = <
- &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &out OUT_TOG  &out OUT_USB  &out OUT_BLE      &trans   &reset  &bootloader
-     &trans       &kp INS     &kp PSCRN   &kp K_CMENU        &reset        &trans                     &kp PG_UP        &trans        &kp UP      &trans   &trans       &trans
-     &trans      &kp LALT     &kp LCTRL     &kp LSHFT   &bootloader      &kp CLCK  &trans  &trans     &kp PG_DN      &kp LEFT      &kp DOWN   &kp RIGHT  &kp DEL     &kp BSPC
-     &trans    &kp K_UNDO     &kp K_CUT    &kp K_COPY   &kp K_PASTE        &trans  &trans  &trans        &trans      &kp C_PP    &kp C_PREV  &kp C_NEXT   &trans       &trans
-                                               &trans        &trans        &trans  &trans  &trans        &trans        &trans        &trans
+ &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                            &out OUT_TOG  &out OUT_USB  &out OUT_BLE      &trans   &reset  &bootloader
+     &trans       &kp INS     &kp PSCRN   &kp K_CMENU        &reset        &trans                               &kp PG_UP        &trans        &kp UP      &trans   &trans       &trans
+     &trans      &kp LALT     &kp LCTRL     &kp LSHFT   &bootloader      &kp CLCK       &reset       &reset     &kp PG_DN      &kp LEFT      &kp DOWN   &kp RIGHT  &kp DEL     &kp BSPC
+     &trans    &kp K_UNDO     &kp K_CUT    &kp K_COPY   &kp K_PASTE        &trans  &bootloader  &bootloader        &trans      &kp C_PP    &kp C_PREV  &kp C_NEXT   &trans       &trans
+                                               &trans        &trans        &trans       &trans       &trans        &trans        &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
+        };
+
+        gaming_layer {
+            bindings = <
+ &kp ESC          &kp N5  &kp N1          &kp N2  &kp N3  &kp N4                               &kp N6         &kp N7         &kp N8   &kp N9  &kp NUMBER_0       &bootloader
+   &kp T         &kp TAB   &kp Q           &kp W   &kp E   &kp R                                &kp Y          &kp U          &kp I    &kp O         &kp P  &kp LEFT_BRACKET
+   &kp G  &kp LEFT_SHIFT   &kp A           &kp S   &kp D   &kp F     &reset     &reset          &kp H          &kp J          &kp K    &kp L      &kp SEMI           &kp SQT
+   &kp B       &kp LCTRL   &kp Z           &kp X   &kp C   &kp V      &kp M      &to 0          &kp N          &kp M      &kp COMMA  &kp DOT      &kp FSLH         &kp RCTRL
+                                  &mt LEFT_ALT Y   &kp U   &kp I  &kp SPACE  &kp ENTER  &kp BACKSPACE  &kp RIGHT_WIN  &kp RIGHT_ALT
+            >;
+        };
+
+        NAV_LAYER {
+            bindings = <
+     &trans        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                              &kp F6         &kp F7        &kp F8           &kp F9  &kp F10  &trans
+     &trans        &trans        &trans        &kp UP        &trans        &trans                              &trans     &kp C_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP   &trans  &trans
+     &trans        &trans      &kp LEFT      &kp DOWN     &kp RIGHT        &trans       &reset       &reset  &kp LEFT       &kp DOWN        &kp UP        &kp RIGHT   &trans  &trans
+ &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bootloader  &bootloader  &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP          &kp END   &trans  &trans
+                                                &to 3        &trans        &trans       &trans       &trans    &trans         &trans         &to 0
+            >;
         };
     };
 };
