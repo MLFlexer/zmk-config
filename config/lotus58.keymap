@@ -119,7 +119,7 @@
     &trans      &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &trans      &reset      &reset      &trans      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //  |           |           |           |           |           |           |                       |           |HOME       |PAGE DOWN  |PAGE UP    |END        |           |
-    &trans      &trans      &trans      &trans      &trans      &trans      &bootloader &bootloader &trans      &kp HOME    &kp PG_DW   &kp PG_UP   &kp END     &trans
+    &trans      &trans      &trans      &trans      &trans      &trans      &bootloader &bootloader &trans      &kp HOME    &kp PG_DW   &kp PG_UP   &trans      &trans//&kp END     &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //                                      |           |           |           |           |           |           |           |           |
                                         &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
