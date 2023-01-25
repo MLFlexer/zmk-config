@@ -24,6 +24,16 @@
             layers = <0>;
             bindings = <&kp LGUI>;
         };
+        left_boot {
+            timeout-ms = <50>;
+            key-positions = <0 44>;
+            bindings = <&bootloader>;
+        };
+        right_boot {
+            timeout-ms = <50>;
+            key-positions = <11 45>;
+            bindings = <&bootloader>;
+        };
     };
 
     behaviors {
