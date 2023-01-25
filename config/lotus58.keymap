@@ -8,11 +8,13 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/ext_power.h>
 
 #define BASE 0
 #define NAV 1
 #define SYM 2
 #define GAME 3
+#define SETTINGS 4
 
 / {
     combos {
@@ -24,13 +26,15 @@
             layers = <0>;
             bindings = <&kp LGUI>;
         };
+
         left_boot {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <0 44>;
             bindings = <&bootloader>;
         };
+
         right_boot {
-            timeout-ms = <50>;
+            timeout-ms = <100>;
             key-positions = <11 45>;
             bindings = <&bootloader>;
         };
@@ -73,6 +77,7 @@
         compatible = "zmk,keymap";
 
         base_layer {
+            label = <Base>;
             bindings = <
 //  _________________________________________________________________________________________________________________________________________________________________________
 //  |ESC        |1          |2          |3          |4          |5          |                       |6          |7          |8          |9          |0          |+          |
@@ -106,7 +111,7 @@
     &trans      &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &trans      &reset      &reset      &trans      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //  |           |           |           |           |           |           |           |GAME       |           |HOME       |PAGE DOWN  |PAGE UP    |END        |           |
-    &trans      &trans      &trans      &trans      &trans      &trans      &trans      &to GAME    &trans      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
+    &trans      &trans      &trans      &trans      &trans      &trans      &to SETTINGS &to GAME   &trans      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //                                      |           |           |           |           |           |           |           |           |
                                         &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
@@ -153,6 +158,27 @@
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //                                      |LALT + Y   |U          |SPACE      |I          |NAV + ENTER|BACKSPACE  |RALT       |BASE       |
                                         &mt LALT Y  &kp U       &kp SPACE   &kp I       &lt NAV RET &kp BSPC    &kp RALT    &mo BASE
+//                                      |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+            >;
+        };
+
+        settings_layer {
+            bindings = <
+//  _________________________________________________________________________________________________________________________________________________________________________
+//  |BT clear   |BT 0       |BT 1      |BT 2        |BT 3       |BT 4       |                       |toggle bt/usb|toggle ext power |   |           |           |           |
+    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                     &out OUT_TOG &ext_power EP_TOG &trans &trans    &trans     &trans
+//  |-----------|-----------|-----------|-----------|-----------|-----------|                       |-----------|-----------|-----------|-----------|-----------|-----------|
+//  |           |           |           |^          |           |           |                       |           |MUTE       |VOL DOWN   |VOL UP     |           |           |
+    &trans      &trans      &trans      &kp UP      &trans      &trans                              &trans      &kp C_MUTE  &kp C_VOL_DN &kp C_VOLUME_UP &trans &trans
+//  |-----------|-----------|-----------|-----------|-----------|-----------|                       |-----------|-----------|-----------|-----------|-----------|-----------|
+//  |           |           |<          |v          |>          |           |                       |           |<          |v          |^          |>          |           |
+    &trans      &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &trans      &reset      &reset      &trans      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
+//  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+//  |           |           |           |           |           |           |                       |           |HOME       |PAGE DOWN  |PAGE UP    |           |           |
+    &bootloader &reset      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp HOME    &kp PG_DN   &kp PG_UP   &reset      &bootloader
+//  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+//                                      |           |           |           |           |           |           |           |           |
+                                        &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
 //                                      |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
             >;
         };
