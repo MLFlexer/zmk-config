@@ -33,7 +33,7 @@
         ctrlc: ctrl_c {
             label = "ctrl_c";
             compatible = "zmk,behavior-macro";
-            //#binding-cells = <0>;
+            #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LCTRL>
                 , <&macro_tap &kp C>
