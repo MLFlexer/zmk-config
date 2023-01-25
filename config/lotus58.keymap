@@ -87,7 +87,7 @@
             bindings = <
 //  _________________________________________________________________________________________________________________________________________________________________________
 //  |           |F1         |F2         |F3         |F4         |F5         |                       |F6         |F7         |F8         |F9         |F0         |           |
-    &trans      &kp F1      &kp F2      &kp F3      &kp F4      &kp F5                              &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &trans
+    &bootloader &kp F1      &kp F2      &kp F3      &kp F4      &kp F5                              &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &bootloader
 //  |-----------|-----------|-----------|-----------|-----------|-----------|                       |-----------|-----------|-----------|-----------|-----------|-----------|
 //  |           |           |           |^          |           |           |                       |           |MUTE       |VOL DOWN   |VOL UP     |           |           |
     &trans      &trans      &trans      &kp UP      &trans      &trans                              &trans      &kp C_MUTE  &kp C_VOL_DN &kp C_VOLUME_UP &trans &trans
@@ -95,8 +95,8 @@
 //  |           |           |<          |v          |>          |           |                       |           |<          |v          |^          |>          |           |
     &trans      &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &trans      &reset      &reset      &trans      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
-//  |           |           |           |           |           |           |                       |           |HOME       |PAGE DOWN  |PAGE UP    |END        |           |
-    &trans      &trans      &trans      &trans      &trans      &trans      &bootloader &bootloader &trans      &kp HOME    &kp PG_DW   &kp PG_UP   &kp END     &trans
+//  |           |           |           |           |           |           |           |GAME       |           |HOME       |PAGE DOWN  |PAGE UP    |END        |           |
+    &trans      &trans      &trans      &trans      &trans      &trans      &trans      &to GAME    &trans      &kp HOME    &kp PG_DW   &kp PG_UP   &kp END     &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //                                      |           |           |           |           |           |           |           |           |
                                         &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
@@ -138,8 +138,8 @@
 //  |G          |SHIFT      |A          |S          |D          |F          |                       |H          |J          |K          |L          |Æ          |Ø          |
     &kp G       &kp LSHFT   &kp A       &kp S       &kp D       &kp F       &reset      &reset      &kp H       &kp J       &kp K       &kp L       &kp SEMI    &mt RSHFT SQT
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
-//  |B          |CTRL       |Z          |X          |C          |V          |           |           |N          |M          |,          |.          |-          |'          |
-    &kp B       &kp LCTRL   &kp Z       &kp X       &kp C       &kp V       &kp C_MUTE  &kp C_PP    &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &mt RCTRL BSLH
+//  |B          |CTRL       |Z          |X          |C          |V          |O          |BASE       |N          |M          |,          |.          |-          |'          |
+    &kp B       &kp LCTRL   &kp Z       &kp X       &kp C       &kp V       &kp O       &to BASE    &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &mt RCTRL BSLH
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //                                      |LALT + Y   |U          |SPACE      |I          |NAV + ENTER|BACKSPACE  |RALT       |BASE       |
                                         &mt LALT Y  &kp U       &kp SPACE   &kp I       &lt NAV RET &kp BSPC    &kp RALT    &mo BASE
