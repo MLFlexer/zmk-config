@@ -31,7 +31,7 @@
 
     macros {
         ctrlc: ctrl_c {
-            //label = "ctrl_c";
+            label = "ctrl_c";
             compatible = "zmk,behavior-macro";
             //#binding-cells = <0>;
             bindings
