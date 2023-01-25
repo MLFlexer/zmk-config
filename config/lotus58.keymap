@@ -29,6 +29,19 @@
         };
     };
 
+    macros {
+        ctrlc: ctrl_c {
+            //label = "ctrl_c";
+            compatible = "zmk,behavior-macro";
+            //#binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp C>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+    };
+
     behaviors {
         fofunc: four_ffour {
             compatible = "zmk,behavior-mod-morph";
@@ -101,7 +114,7 @@
     &trans      &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &trans      &reset      &reset      &trans      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //  |           |           |           |           |           |           |SETTINGS   |GAME       |           |HOME       |PAGE DOWN  |PAGE UP    |END        |           |
-    &trans      &trans      &trans      &trans      &trans      &trans      &to SETTINGS &to GAME   &trans      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
+    &trans      &trans      &trans      &ctrlc      &trans      &trans      &to SETTINGS &to GAME   &trans      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //                                      |           |           |           |           |           |           |           |           |
                                         &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
@@ -117,14 +130,14 @@
 //  |           |F1         |F2         |F3         |F4         |F5         |                       |F6         |F7         |F8         |F9         |F0         |           |
     &bootloader &kp F1      &kp F2      &kp F3      &kp F4      &kp F5                              &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &bootloader
 //  |-----------|-----------|-----------|-----------|-----------|-----------|                       |-----------|-----------|-----------|-----------|-----------|-----------|
-//  |           |           |           |^          |           |           |                       |           |MUTE       |VOL DOWN   |VOL UP     |           |           |
-    &trans      &trans      &trans      &kp UP      &trans      &trans                              &trans      &kp C_MUTE  &kp C_VOL_DN &kp C_VOLUME_UP &trans &trans
+//  |           |           |           |           |           |           |                       |           |           |VOL DOWN   |VOL UP     |           |           |
+    &kp EQUAL   &kp EXCL    &kp AT      &kp HASH    &kp DOLLAR  &kp PERCENT                         &kp AMPS    &kp SLASH  &kp DQT      &kp APOS    &kp CARET &kp GRAVE
 //  |-----------|-----------|-----------|-----------|-----------|-----------|                       |-----------|-----------|-----------|-----------|-----------|-----------|
-//  |           |           |<          |v          |>          |           |                       |           |<          |v          |^          |>          |           |
-    &trans      &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &trans      &reset      &reset      &trans      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
+//  |           |           |<          |(          |)          |           |                       |           |<          |v          |^          |>          |           |
+    &kp PLUS    &kp STAR    &kp LEFT    &kp LPAR    &kp RPAR    &kp COLON   &reset      &reset      &trans      &kp LBKT    &kp RBKT    &kp UP      &kp TILDE   &kp GRAVE
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //  |           |           |           |           |           |           |                       |           |HOME       |PAGE DOWN  |PAGE UP    |END        |           |
-    &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
+    &kp QMARK   &kp BSLH    &kp COLON   &kp LBRC    &kp RBRC    &kp SEMI    &trans      &trans      &trans      &kp LT      &kp GT      &kp PIPE    &kp MINUS   &kp UNDER
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //                                      |           |           |           |           |           |           |           |           |
                                         &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
@@ -168,7 +181,7 @@
     &trans      &trans      &trans      &trans      &trans      &trans      &reset      &reset      &trans      &trans      &trans      &trans      &trans      &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //  |           |           |           |           |           |           |                       |           |           |           |           |           |           |
-    &bootloader &reset      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans   &reset      &bootloader
+    &bootloader &reset      &trans      &trans      &trans      &trans      &to BASE    &to BASE    &trans      &trans      &trans      &trans   &reset      &bootloader
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //                                      |           |           |           |           |           |           |           |           |
                                         &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
