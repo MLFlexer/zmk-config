@@ -164,10 +164,10 @@
     &kp EQUAL   &kp EXCL    &kp AT      &kp HASH    &kp DOLLAR  &kp PERCENT                         &kp AMPS    &kp SLASH  &kp DQT      &kp APOS    &kp CARET &kp GRAVE
 //  |-----------|-----------|-----------|-----------|-----------|-----------|                       |-----------|-----------|-----------|-----------|-----------|-----------|
 //  |`          |(          |<          |)          |=          |Æ          |                       |           |å          |¨          |^          |§          |½          |
-    &kp PLUS    &kp STAR    &kp LEFT    &kp LPAR    &kp RPAR    &kp COLON   &reset      &reset      &trans      &kp LBKT    &kp RBKT    &kp UP      &kp TILDE   &kp GRAVE
+    &kp PLUS    &kp STAR    &kp LEFT    &kp LPAR    &kp RPAR    &kp COLON   &reset      &reset      &kp NUHS    &kp LBKT    &kp RBKT    &kp UP      &kp TILDE   &kp GRAVE
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //  |_          |'          |Æ          |Å          |^          |æ          |SHIFT      |RALT       |           |;          |:          |*          |+          |?          |
-    &kp QMARK   &kp BSLH    &kp COLON   &kp LBRC    &kp RBRC    &kp SEMI    &kp LSHFT   &kp RALT    &trans      &kp LT      &kp GT      &kp PIPE    &kp MINUS   &kp UNDER
+    &kp QMARK   &kp BSLH    &kp COLON   &kp LBRC    &kp RBRC    &kp SEMI    &kp LSHFT   &kp RALT    &kp NUBS    &kp LT      &kp GT      &kp PIPE    &kp MINUS   &kp UNDER
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //                                      |           |           |           |           |           |           |           |           |
                                         &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
