@@ -43,7 +43,7 @@
         ctrlx: ctrl_x {
             label = "ctrl_x";
             compatible = "zmk,behavior-macro";
-            #binding-cells = <1>;
+            #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LCTRL>
                 , <&macro_tap &kp X>
@@ -53,7 +53,7 @@
         ctrlc: ctrl_c {
             label = "ctrl_c";
             compatible = "zmk,behavior-macro";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LCTRL>
                 , <&macro_tap &kp C>
@@ -63,7 +63,7 @@
         ctrlv: ctrl_v {
             label = "ctrl_v";
             compatible = "zmk,behavior-macro";
-            #binding-cells = <3>;
+            #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LCTRL>
                 , <&macro_tap &kp V>
