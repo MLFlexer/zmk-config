@@ -33,7 +33,7 @@
         ctrlz: ctrl_z {
             label = "ctrl_z";
             compatible = "zmk,behavior-macro";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LCTRL>
                 , <&macro_tap &kp Z>
@@ -43,7 +43,7 @@
         ctrlx: ctrl_x {
             label = "ctrl_x";
             compatible = "zmk,behavior-macro";
-            #binding-cells = <3>;
+            #binding-cells = <1>;
             bindings
                 = <&macro_press &kp LCTRL>
                 , <&macro_tap &kp X>
@@ -53,7 +53,7 @@
         ctrlc: ctrl_c {
             label = "ctrl_c";
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             bindings
                 = <&macro_press &kp LCTRL>
                 , <&macro_tap &kp C>
@@ -63,7 +63,7 @@
         ctrlv: ctrl_v {
             label = "ctrl_v";
             compatible = "zmk,behavior-macro";
-            #binding-cells = <1>;
+            #binding-cells = <3>;
             bindings
                 = <&macro_press &kp LCTRL>
                 , <&macro_tap &kp V>
@@ -121,7 +121,7 @@
 //  |SHIFT      |A          |S          |D          |F          |G          |                       |H          |J          |K          |L          |Æ          |Ø          |
     &kp LSHFT   &kp A       &kp S       &kp D       &kp F       &kp G       &reset      &reset      &kp H       &kp J       &kp K       &kp L       &kp SEMI    &mt RSHFT SQT
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
-//  |CTRL       |Z          |X          |C          |V          |B          |           |           |N          |M          |,          |.          |-          |'          |
+//  |CTRL       |Z          |X          |C          |V          |B          |MUTE       |PLAY/PAUSE |N          |M          |,          |.          |-          |'          |
     &kp LCTRL   &kp Z       &kp X       &kp C       &kp V       &kp B       &kp C_MUTE  &kp C_PP    &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &mt RCTRL BSLH
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //                                      |LWIN       |LALT       |SPACE      |SYM + DEL  |NAV + ENTER|BACKSPACE  |RALT       |RWIN       |
@@ -137,8 +137,8 @@
 //  |           |F1         |F2         |F3         |F4         |F5         |                       |F6         |F7         |F8         |F9         |F0         |           |
     &bootloader &kp F1      &kp F2      &kp F3      &kp F4      &kp F5                              &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &bootloader
 //  |-----------|-----------|-----------|-----------|-----------|-----------|                       |-----------|-----------|-----------|-----------|-----------|-----------|
-//  |           |           |           |^          |           |           |                       |           |MUTE       |VOL DOWN   |VOL UP     |           |           |
-    &trans      &trans      &trans      &kp UP      &trans      &trans                              &trans      &kp C_MUTE  &kp C_VOL_DN &kp C_VOLUME_UP &trans &trans
+//  |           |           |           |^          |           |           |                       |PLAY/PAUSE |MUTE       |VOL DOWN   |VOL UP     |           |           |
+    &trans      &trans      &trans      &kp UP      &trans      &trans                              &kp C_PP    &kp C_MUTE  &kp C_VOL_DN &kp C_VOLUME_UP &trans &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|                       |-----------|-----------|-----------|-----------|-----------|-----------|
 //  |           |           |<-         |v          |->         |           |                       |           |<-         |v          |^          |->         |           |
     &trans      &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &trans      &reset      &reset      &trans      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
