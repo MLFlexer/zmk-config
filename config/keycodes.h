@@ -6,9 +6,9 @@
 #define _LCBRA RA(N7) //{
 #define _RCBRA RA(N0) //}
 #define _LT NUBS //<
-#define _GT RA(NUBS) //>
+#define _GT LS(NUBS) //>
 #define _BSLH LS(N7) // /
-#define _FSLH LS(NUBS) // \
+#define _FSLH RA(NUBS) // \
 
 #define _AT RA(N2) //@
 #define _POUND RA(N3) //£
