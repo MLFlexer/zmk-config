@@ -162,11 +162,11 @@
 //  |           |F1         |F2         |F3         |F4         |F5         |                       |F6         |F7         |F8         |F9         |F0         |           |
     &bootloader &kp F1      &kp F2      &kp F3      &kp F4      &kp F5                              &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &bootloader
 //  |-----------|-----------|-----------|-----------|-----------|-----------|                       |-----------|-----------|-----------|-----------|-----------|-----------|
-//  |´          |!          |"          |#          |¤          |%          |                       |/          |{          |}          |ø          |&          |½          |
-    &kp EQUAL   &kp EXCL    &kp AT      &kp HASH    &kp DOLLAR  &kp PERCENT                         &kp AMPS    &kp _LCBRA  &kp _RCBRA  &kp APOS    &kp CARET &kp GRAVE
+//  |´          |!          |"          |#          |¤          |%          |                       |&          |{          |}          |/          |\          |½          |
+    &kp EQUAL   &kp EXCL    &kp AT      &kp HASH    &kp DOLLAR  &kp PERCENT                         &kp _AND    &kp _LCBRA  &kp _RCBRA  &kp _BSLH   &kp _FSLH &kp GRAVE
 //  |-----------|-----------|-----------|-----------|-----------|-----------|                       |-----------|-----------|-----------|-----------|-----------|-----------|
-//  |`          |(          |<          |)          |=          |Æ          |                       |'          |(          |)          |^          |§          |½          |
-    &kp PLUS    &kp STAR    &kp LEFT    &kp LPAR    &kp RPAR    &kp COLON   &reset      &reset      &kp NUHS    &kp _LPAR   &kp _RPAR   &kp UP      &kp TILDE   &kp GRAVE
+//  |`          |?          |@          |$          |=          |Æ          |                       |'          |(          |)          |<          |>          |½          |
+    &kp PLUS    &kp _QM    &kp _AT     &kp _DLR    &kp RPAR    &kp COLON   &reset      &reset      &kp NUHS    &kp _LPAR   &kp _RPAR   &kp _LT     &kp _GT     &kp GRAVE
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //  |_          |'          |Æ          |Å          |^          |æ          |SHIFT      |RALT       |<          |[          |]          |*          |+          |?          |
     &kp QMARK   &kp BSLH    &kp COLON   &kp LBRC    &kp RBRC    &kp SEMI    &kp LSHFT   &kp RALT    &kp NUBS    &kp _LBRA   &kp _RBRA   &kp PIPE    &kp MINUS   &kp UNDER
