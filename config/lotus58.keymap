@@ -30,26 +30,6 @@
     };
 
     macros {
-        ctrlc: ctrl_c {
-            label = "ctrl_c";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp C>
-                , <&macro_release &kp LCTRL>
-                ;
-        };
-        ctrlv: ctrl_v {
-            label = "ctrl_v";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <1>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp V>
-                , <&macro_release &kp LCTRL>
-                ;
-        };
         ctrlz: ctrl_z {
             label = "ctrl_z";
             compatible = "zmk,behavior-macro";
@@ -67,6 +47,26 @@
             bindings
                 = <&macro_press &kp LCTRL>
                 , <&macro_tap &kp X>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+        ctrlc: ctrl_c {
+            label = "ctrl_c";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp C>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+        ctrlv: ctrl_v {
+            label = "ctrl_v";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <1>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp V>
                 , <&macro_release &kp LCTRL>
                 ;
         };
@@ -146,8 +146,8 @@
 //  |           |           |           |           |           |           |SETTINGS   |GAME       |           |HOME       |PAGE DOWN  |PAGE UP    |END        |           |
     &trans      &ctrlz      &ctrlx      &ctrlc      &ctrlv      &trans      &to SETTINGS &to GAME   &trans      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
-//                                      |           |           |           |           |           |           |           |           |
-                                        &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
+//                                      |           |           |           |CTRL       |           |           |           |           |
+                                        &trans      &trans      &trans      &kp LCTRL   &trans      &trans      &trans      &trans
 //                                      |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
             >;
         };
