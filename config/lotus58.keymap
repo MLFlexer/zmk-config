@@ -142,8 +142,8 @@
 //  |           |           |           |^          |           |           |                       |PLAY/PAUSE |MUTE       |VOL DOWN   |VOL UP     |           |           |
     &trans      &trans      &trans      &kp UP      &trans      &trans                              &kp C_PP    &kp C_MUTE  &kp C_VOL_DN &kp C_VOLUME_UP &trans &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|                       |-----------|-----------|-----------|-----------|-----------|-----------|
-//  |           |           |<-         |v          |->         |           |                       |           |<-         |v          |^          |->         |           |
-    &trans      &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &trans      &reset      &reset      &trans      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
+//  |           |           |<-         |v          |->         |           |                       |<-         |v          |^          |->         |           |           |
+    &trans      &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &trans      &reset      &reset      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans      &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //  |           |           |           |           |           |           |SETTINGS   |GAME       |           |HOME       |PAGE DOWN  |PAGE UP    |END        |           |
     &trans      &ctrlz      &ctrlx      &ctrlc      &ctrlv      &trans      &to SETTINGS &to GAME   &trans      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
