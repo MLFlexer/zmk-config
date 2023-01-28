@@ -168,8 +168,8 @@
 //  |`          |?          |@          |$          |=          |Æ          |                       |'          |(          |)          |<          |>          |½          |
     &kp PLUS    &kp _QM    &kp _AT     &kp _DLR    &kp RPAR    &kp COLON   &reset      &reset      &kp NUHS    &kp _LPAR   &kp _RPAR   &kp _LT     &kp _GT     &kp GRAVE
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
-//  |_          |'          |Æ          |Å          |^          |æ          |SHIFT      |RALT       |<          |[          |]          |:          |_          ||          |
-    &kp QMARK   &kp BSLH    &kp COLON   &kp LBRC    &kp RBRC    &kp SEMI    &kp LSHFT   &kp RALT    &kp NUBS    &kp _LBRA   &kp _RBRA   &kp _COL    &kp _UNDR   &kp _PIPE
+//  |_          |'          |*          |Å          |^          |æ          |SHIFT      |RALT       |<          |[          |]          |:          |_          ||          |
+    &kp QMARK   &kp BSLH    &kp _ASTR   &kp LBRC    &kp RBRC    &kp SEMI    &kp LSHFT   &kp RALT    &kp NUBS    &kp _LBRA   &kp _RBRA   &kp _COL    &kp _UNDR   &kp _PIPE
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //                                      |           |           |           |           |           |           |           |           |
                                         &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans

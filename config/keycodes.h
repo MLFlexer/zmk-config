@@ -20,3 +20,4 @@
 #define _COL LS(DOT) // :
 #define _UNDR LS(FSLH) // _
 #define _PIPE LS(EQUAL) // |
+#define _ASTR LS(BSLH) // *
