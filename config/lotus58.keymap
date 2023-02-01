@@ -178,7 +178,7 @@
     &trans      &kp EXCL    &kp FSLH    &kp MINUS   &kp RPAR    &kp _HASH   &reset      &reset      &kp _PIPE   &kp _COL    &kp _LPAR   &kp _RPAR   &kp _QM     &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //  |           |^          |/          |*          |\          |           |SHIFT      |RALT       |~          |$          |{          |}          |@          |           |
-    &trans      &kp arr_up  &kp _BLSH   &kp _ASTR   &kp _FSLH   &trans      &kp LSHFT   &kp RALT    &kp _TILDE  &kp _DLR    &kp _LCBRA  &kp _RCBRA  &kp _AT     &trans
+    &trans      &trans  &kp _BLSH   &kp _ASTR   &kp _FSLH   &trans      &kp LSHFT   &kp RALT    &kp _TILDE  &kp _DLR    &kp _LCBRA  &kp _RCBRA  &kp _AT     &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //                                      |           |           |           |           |           |           |           |           |
                                         &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
