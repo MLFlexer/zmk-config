@@ -19,11 +19,11 @@
 #define _SEMI LS(COMMA) // ;
 #define _COL LS(DOT) // :
 #define _UNDR LS(FSLH) // _
-#define _PIPE LS(EQUAL) // |
+#define _PIPE RA(EQUAL) // |
 #define _ASTR LS(BSLH) // *
 #define _SQ BSLH // '
 #define _DBLQ LS(N2) //"
 #define _HASH LS(N3) //#
 #define _PCT LS(N5) // %
 
-#define _TILDE RA(LBKT) // ~
+#define _TILDE RA(RBRC) // ~
