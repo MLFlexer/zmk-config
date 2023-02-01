@@ -41,6 +41,15 @@
                 , <&macro_tap &kp SPACE>
                 ;
         };
+        tilspc: tilde_space {
+            label = "tilde_space";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LC(RBRC)>
+                , <&macro_tap &kp SPACE>
+                ;
+        };
         ctrlz: ctrl_z {
             label = "ctrl_z";
             compatible = "zmk,behavior-macro";
@@ -178,7 +187,7 @@
     &trans      &kp EXCL    &kp FSLH    &kp MINUS   &kp RPAR    &kp _HASH   &reset      &reset      &kp _PIPE   &kp _COL    &kp _LPAR   &kp _RPAR   &kp _QM     &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //  |           |^          |/          |*          |\          |           |SHIFT      |RALT       |~          |$          |{          |}          |@          |           |
-    &trans      &arrup      &kp _BSLH   &kp _ASTR   &kp _FSLH   &trans      &kp LSHFT   &kp RALT    &kp _TILDE  &kp _DLR    &kp _LCBRA  &kp _RCBRA  &kp _AT     &trans
+    &trans      &arrup      &kp _BSLH   &kp _ASTR   &kp _FSLH   &trans      &kp LSHFT   &kp RALT    &tilspc     &kp _DLR    &kp _LCBRA  &kp _RCBRA  &kp _AT     &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //                                      |           |           |           |           |           |           |           |           |
                                         &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
