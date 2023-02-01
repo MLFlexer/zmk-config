@@ -175,8 +175,8 @@
     &trans      &kp BSLH    &kp _LT     &kp _GT     &kp _DBLQ   &kp DOT                             &kp _AND    &trans      &kp _LBRA   &kp _RBRA   &kp _PCT    &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|                       |-----------|-----------|-----------|-----------|-----------|-----------|
 //  |           |!          |-          |+          |=          |#          |                       ||          |:          |(          |)          |?          |           |
-    &kp G       &kp LSHFT   &kp A       &kp S       &kp D       &kp F       &reset      &reset      &kp H       &kp J       &kp K       &kp L       &kp SEMI    &mt RSHFT SQT
-//    &trans      &kp EXCL    &kp FSLH    &kp MINUS   &kp RPAR    &kp _HASH   &reset      &reset      &kp _PIPE   &kp _COL    &kp _LPAR   &kp _RPAR   &kp _QM     &trans
+//    &kp G       &kp LSHFT   &kp A       &kp S       &kp D       &kp F       &reset      &reset      &kp H       &kp J       &kp K       &kp L       &kp SEMI    &mt RSHFT SQT
+    &trans      &kp EXCL    &kp FSLH    &kp MINUS   &kp RPAR    &kp _HASH   &reset      &reset      &kp _PIPE   &kp _COL    &kp _LPAR   &kp _RPAR   &kp _QM     &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //  |           |^          |/          |*          |\          |           |SHIFT      |RALT       |~          |$          |{          |}          |@          |           |
     &kp G       &kp LSHFT   &kp A       &kp S       &kp D       &kp F       &reset      &reset      &kp H       &kp J       &kp K       &kp L       &kp SEMI    &mt RSHFT SQT
