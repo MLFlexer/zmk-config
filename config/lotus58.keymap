@@ -179,7 +179,7 @@
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //  |           |^          |/          |*          |\          |           |SHIFT      |RALT       |~          |$          |{          |}          |@          |           |
 //    &kp G       &kp LSHFT   &kp A       &kp S       &kp D       &kp F       &reset      &reset      &kp H       &kp J       &kp K       &kp L       &kp SEMI    &mt RSHFT SQT
-    &trans      &arrup      &trans      &kp _ASTR   &kp _FSLH   &trans      &kp LSHFT   &kp RALT    &kp _TILDE  &kp _DLR    &kp _LCBRA  &kp _RCBRA  &kp _AT     &trans
+    &trans      &arrup      &kp _BSLH   &kp _ASTR   &kp _FSLH   &trans      &kp LSHFT   &kp RALT    &kp _TILDE  &kp _DLR    &kp _LCBRA  &kp _RCBRA  &kp _AT     &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //                                      |           |           |           |           |           |           |           |           |
                                         &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
