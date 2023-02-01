@@ -21,3 +21,9 @@
 #define _UNDR LS(FSLH) // _
 #define _PIPE LS(EQUAL) // |
 #define _ASTR LS(BSLH) // *
+#define _SQ BSLH // '
+#define _DBLQ LS(N2) //"
+#define _HASH LS(N3) //#
+#define _PCT LS(N5) // %
+
+#define _TILDE LA(LBKT) / ~
