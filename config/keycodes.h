@@ -26,4 +26,4 @@
 #define _HASH LS(N3) //#
 #define _PCT LS(N5) // %
 
-#define _TILDE LC(RBRC) // ~
+#define _TILDE RA(RBRC) // ~
