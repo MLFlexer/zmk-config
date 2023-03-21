@@ -26,4 +26,4 @@
 #define _HASH LS(N3) //#
 #define _PCT LS(N5) // %
 
-#define _TILDE LA(RBKT) // ~
+#define _TILDE RA(RBKT) // ~
