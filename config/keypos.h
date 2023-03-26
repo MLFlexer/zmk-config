@@ -9,6 +9,9 @@
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //                                      |L_4_0      |L_4_1      |L_4_2      |L_4_3      |
 //                                      |-----------|-----------|-----------|-----------|
+
+
+//Left side macros:
 #define L_0_0 0
 #define L_0_1 1
 #define L_0_2 2
@@ -37,12 +40,16 @@
 #define L_3_4 42
 #define L_3_5 43
 
-#define L_4_0 52
-#define L_4_1 53
-#define L_4_2 54
-#define L_4_3 55
+//left thumb macros
+#define LT_0 52
+#define LT_1 53
+#define LT_2 54
+#define LT_3 55
 
-#define KEYS_L L_0_0 L_0_1 L_0_2 L_0_3 L_0_4 L_0_5 L_1_0 L_1_1 L_1_2 L_1_3 L_1_4 L_1_5 L_2_0 L_2_1 L_2_2 L_2_3 L_2_4 L_2_5 L_3_0 L_3_1 L_3_2 L_3_3 L_3_4 L_3_5 L_4_0 L_4_1 L_4_2 L_4_3 
+#define KEYS_L L_0_0 L_0_1 L_0_2 L_0_3 L_0_4 L_0_5 L_1_0 L_1_1 L_1_2 L_1_3 L_1_4 L_1_5 L_2_0 L_2_1 L_2_2 L_2_3 L_2_4 L_2_5 L_3_0 L_3_1 L_3_2 L_3_3 L_3_4 L_3_5 LT_0 LT_1 LT_2 LT_3
+#define MAIN_KEYS_L L_0_0 L_0_1 L_0_2 L_0_3 L_0_4 L_0_5 L_1_0 L_1_1 L_1_2 L_1_3 L_1_4 L_1_5 L_2_0 L_2_1 L_2_2 L_2_3 L_2_4 L_2_5 L_3_0 L_3_1 L_3_2 L_3_3 L_3_4 L_3_5
+#define THUMB_KEYS_L LT_0 LT_1 LT_2 LT_3
+
 
 //              _________________________________________________________________________
 //              |R_0_0      |R_0_1      |R_0_2      |R_0_3      |R_0_4      |R_0_5      |            
@@ -56,6 +63,7 @@
 //  |R_4_0      |R_4_1      |R_4_2      |R_4_3      |
 //  |-----------|-----------|-----------|-----------|
 
+//Right side macros:
 #define R_0_0 6
 #define R_0_1 7
 #define R_0_2 8
@@ -84,9 +92,12 @@
 #define R_3_4 50
 #define R_3_5 51
 
-#define R_4_0 56
-#define R_4_1 57
-#define R_4_2 58
-#define R_4_3 59
+//right thumb macros
+#define RT_0 56
+#define RT_1 57
+#define RT_2 58
+#define RT_3 59
 
-#define KEYS_R R_0_0 R_0_1 R_0_2 R_0_3 R_0_4 R_0_5 R_1_0 R_1_1 R_1_2 R_1_3 R_1_4 R_1_5 R_2_0 R_2_1 R_2_2 R_2_3 R_2_4 R_2_5 R_3_0 R_3_1 R_3_2 R_3_3 R_3_4 R_3_5 R_4_0 R_4_1 R_4_2 R_4_3 
+#define KEYS_R R_0_0 R_0_1 R_0_2 R_0_3 R_0_4 R_0_5 R_1_0 R_1_1 R_1_2 R_1_3 R_1_4 R_1_5 R_2_0 R_2_1 R_2_2 R_2_3 R_2_4 R_2_5 R_3_0 R_3_1 R_3_2 R_3_3 R_3_4 R_3_5 RT_0 RT_1 RT_2 RT_3
+#define MAIN_KEYS_R R_0_0 R_0_1 R_0_2 R_0_3 R_0_4 R_0_5 R_1_0 R_1_1 R_1_2 R_1_3 R_1_4 R_1_5 R_2_0 R_2_1 R_2_2 R_2_3 R_2_4 R_2_5 R_3_0 R_3_1 R_3_2 R_3_3 R_3_4 R_3_5
+#define THUMB_KEYS_R RT_0 RT_1 RT_2 RT_3
