@@ -85,9 +85,9 @@
 
         combo_caps_word {
             timeout-ms = <50>;
-            key-positions = <L_2_4 L_2_1>;
+            key-positions = <L_2_4 R_2_1>;
             layers = <0>;
-            bindings = <&prog_caps>;
+            bindings = <&caps_word>;
         };
     };
 
