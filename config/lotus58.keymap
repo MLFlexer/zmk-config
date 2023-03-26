@@ -50,7 +50,6 @@
         label = "PROG_CAPS";
         #binding-cells = <0>;
         continue-list = <FSLH LS(FSLH) RS(FSLH)>;
-        mods = <(MOD_LSFT | MOD_RSFT)>;
         };
         l_hrm: left_home_row_mod {
             compatible = "zmk,behavior-hold-tap";
@@ -89,6 +88,20 @@
             key-positions = <L_2_4 R_2_1>;
             layers = <0>;
             bindings = <&prog_caps>;
+        };
+
+        combo_ctrl_shft_c {
+            timeout-ms = <100>;
+            key-positions = <R_2_2 R_2_1 L_3_3>;
+            layers = <0>;
+            bindings = <&kp LC(LS(C))>;
+        };
+
+        combo_ctrl_shft_c {
+            timeout-ms = <100>;
+            key-positions = <R_2_2 R_2_1 L_3_3>;
+            layers = <0>;
+            bindings = <&kp LC(LS(C))>;
         };
     };
 
@@ -130,8 +143,8 @@
 //  |           |           |<-         |v          |->         |           |                       |<-         |v          |^          |->         |           |           |
     &trans      &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &trans      &reset      &reset      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans      &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
-//  |           |           |           |           |           |           |SETTINGS   |GAME       |           |HOME       |PAGE DOWN  |PAGE UP    |END        |           |
-    &trans      &trans      &trans      &trans      &trans      &trans      &to SETTINGS &to GAME   &trans      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
+//  |           |           |           |           |           |           |SETTINGS   |GAME       |HOME       |PAGE DOWN  |PAGE UP    |END        |           |           |
+    &trans      &trans      &trans      &trans      &trans      &trans      &to SETTINGS &to GAME   &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans      &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //                                      |           |           |           |CTRL       |           |           |           |           |
                                         &trans      &trans      &trans      &kp LCTRL   &trans      &trans      &trans      &trans
