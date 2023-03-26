@@ -29,14 +29,14 @@
             key-positions = <L_1_1 L_1_2>;
             layers = <0>;
             bindings = <&kp ESC>;
-        }
+        };
 
         combo_caps_word {
             timeout-ms = <50>;
             key-positions = <L_3_4 L_3_1>;
             layers = <0>;
             bindings = <&caps_word>;
-        }
+        };
     };
 
     macros {
