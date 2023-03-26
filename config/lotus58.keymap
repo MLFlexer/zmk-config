@@ -49,7 +49,8 @@
         compatible = "zmk,behavior-caps-word";
         label = "PROG_CAPS";
         #binding-cells = <0>;
-        continue-list = <UNDERSCORE>;
+        continue-list = <FSLH LS(FSLH) RS(FSLH)>;
+        mods = <(MOD_LSFT | MOD_RSFT)>;
         };
         l_hrm: left_home_row_mod {
             compatible = "zmk,behavior-hold-tap";
