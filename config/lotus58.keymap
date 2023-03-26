@@ -102,7 +102,7 @@
             tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <KEYS_L>;    // <---[[right-hand keys]]
+            hold-trigger-key-positions = <KEYS_R>;    // <---[[right-hand keys]]
         };
         fofunc: four_ffour {
             compatible = "zmk,behavior-mod-morph";
