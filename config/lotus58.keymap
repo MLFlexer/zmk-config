@@ -97,11 +97,11 @@
             bindings = <&kp LC(LS(C))>;
         };
 
-        combo_ctrl_shft_c {
+        combo_ctrl_shft_v {
             timeout-ms = <100>;
-            key-positions = <R_2_2 R_2_1 L_3_3>;
+            key-positions = <R_2_2 R_2_1 L_3_4>;
             layers = <0>;
-            bindings = <&kp LC(LS(C))>;
+            bindings = <&kp LC(LS(V))>;
         };
     };
 
