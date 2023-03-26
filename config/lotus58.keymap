@@ -24,12 +24,19 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_dsklg {
-            timeout-ms = <100>;
-            key-positions = <24 52>;
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <L_1_1 L_1_2>;
             layers = <0>;
-            bindings = <&kp LGUI>;
-        };
+            bindings = <&kp ESC>;
+        }
+
+        combo_caps_word {
+            timeout-ms = <50>;
+            key-positions = <L_3_4 L_3_1>;
+            layers = <0>;
+            bindings = <&caps_word>;
+        }
     };
 
     macros {
@@ -49,46 +56,6 @@
             bindings
                 = <&macro_tap &kp _TILDE>
                 , <&macro_tap &kp SPACE>
-                ;
-        };
-        ctrlz: ctrl_z {
-            label = "ctrl_z";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp Z>
-                , <&macro_release &kp LCTRL>
-                ;
-        };
-        ctrlx: ctrl_x {
-            label = "ctrl_x";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp X>
-                , <&macro_release &kp LCTRL>
-                ;
-        };
-        ctrlc: ctrl_c {
-            label = "ctrl_c";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp C>
-                , <&macro_release &kp LCTRL>
-                ;
-        };
-        ctrlv: ctrl_v {
-            label = "ctrl_v";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp V>
-                , <&macro_release &kp LCTRL>
                 ;
         };
     };
@@ -113,36 +80,6 @@
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <MAIN_KEYS_L>;
-        };
-        fofunc: four_ffour {
-            compatible = "zmk,behavior-mod-morph";
-            label = "FOUR_FUNCFOUR";
-            #binding-cells = <0>;
-            bindings =
-                <&kp N4>,
-                <&kp F4>;
-
-            mods = <(MOD_LALT|MOD_RALT)>;
-        };
-        sleft: s_left {
-            compatible = "zmk,behavior-mod-morph";
-            label = "S_LEFT";
-            #binding-cells = <0>;
-            bindings =
-                <&kp S>,
-                <&kp LEFT>;
-
-            mods = <(MOD_LGUI|MOD_RGUI)>;
-        };
-        fright: f_right {
-            compatible = "zmk,behavior-mod-morph";
-            label = "R_RIGHT";
-            #binding-cells = <0>;
-            bindings =
-                <&kp F>,
-                <&kp RIGHT>;
-
-            mods = <(MOD_LGUI|MOD_RGUI)>;
         };
     };
 
@@ -185,7 +122,7 @@
     &trans      &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &trans      &reset      &reset      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans      &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //  |           |           |           |           |           |           |SETTINGS   |GAME       |           |HOME       |PAGE DOWN  |PAGE UP    |END        |           |
-    &trans      &ctrlz      &ctrlx      &ctrlc      &ctrlv      &trans      &to SETTINGS &to GAME   &trans      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
+    &trans      &trans      &trans      &trans      &trans      &trans      &to SETTINGS &to GAME   &trans      &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //                                      |           |           |           |CTRL       |           |           |           |           |
                                         &trans      &trans      &trans      &kp LCTRL   &trans      &trans      &trans      &trans
