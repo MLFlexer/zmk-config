@@ -87,7 +87,7 @@
             timeout-ms = <50>;
             key-positions = <L_2_4 R_2_1>;
             layers = <0>;
-            bindings = <&caps_word>;
+            bindings = <&prog_caps>;
         };
     };
 
