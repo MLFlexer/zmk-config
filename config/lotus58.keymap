@@ -21,23 +21,7 @@
 #define TEMP 5
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <L_1_1 L_1_2>;
-            layers = <0>;
-            bindings = <&kp ESC>;
-        };
-
-        combo_caps_word {
-            timeout-ms = <50>;
-            key-positions = <L_3_4 L_3_1>;
-            layers = <0>;
-            bindings = <&caps_word>;
-        };
-    };
+    
 
     macros {
         arrup: arr_up {
@@ -61,6 +45,12 @@
     };
 
     behaviors {
+        prog_caps: behavior_prog_caps_word {
+        compatible = "zmk,behavior-caps-word";
+        label = "PROG_CAPS";
+        #binding-cells = <0>;
+        continue-list = <UNDERSCORE>;
+        };
         l_hrm: left_home_row_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "LEFT_HOME_ROW_MOD";
@@ -80,6 +70,24 @@
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <MAIN_KEYS_L>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <L_1_1 L_1_2>;
+            layers = <0>;
+            bindings = <&kp ESC>;
+        };
+
+        combo_caps_word {
+            timeout-ms = <50>;
+            key-positions = <L_2_4 L_2_1>;
+            layers = <0>;
+            bindings = <&prog_caps>;
         };
     };
 
