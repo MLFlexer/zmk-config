@@ -13,6 +13,8 @@
 #include "keycodes.h"
 #include "keypos.h"
 
+#include "mouse.dtsi"
+
 #define BASE 0
 #define NAV 1
 #define SYM 2
@@ -138,7 +140,7 @@
     &bootloader &kp F1      &kp F2      &kp F3      &kp F4      &kp F5                              &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &bootloader
 //  |-----------|-----------|-----------|-----------|-----------|-----------|                       |-----------|-----------|-----------|-----------|-----------|-----------|
 //  |           |           |           |^          |           |           |                       |PLAY/PAUSE |MUTE       |VOL DOWN   |VOL UP     |           |           |
-    &trans      &trans      &trans      &kp UP      &trans      &trans                              &kp C_PP    &kp C_MUTE  &kp C_VOL_DN &kp C_VOLUME_UP &trans &trans
+    &trans      &trans      &trans      U_MS_U      &trans      &trans                              &kp C_PP    &kp C_MUTE  &kp C_VOL_DN &kp C_VOLUME_UP &trans &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|                       |-----------|-----------|-----------|-----------|-----------|-----------|
 //  |           |           |<-         |v          |->         |           |                       |<-         |v          |^          |->         |           |           |
     &trans      &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &trans      &reset      &reset      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans      &trans
