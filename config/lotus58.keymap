@@ -140,16 +140,16 @@
     &bootloader &kp F1      &kp F2      &kp F3      &kp F4      &kp F5                              &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &bootloader
 //  |-----------|-----------|-----------|-----------|-----------|-----------|                       |-----------|-----------|-----------|-----------|-----------|-----------|
 //  |           |           |           |^          |           |           |                       |PLAY/PAUSE |MUTE       |VOL DOWN   |VOL UP     |           |           |
-    &trans      &trans      &trans      U_MS_U      &trans      &trans                              &kp C_PP    &kp C_MUTE  &kp C_VOL_DN &kp C_VOLUME_UP &trans &trans
+    &trans      &trans      U_WH_D      U_MS_U      U_WH_U      &trans                              &kp C_PP    &kp C_MUTE  &kp C_VOL_DN &kp C_VOLUME_UP &trans &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|                       |-----------|-----------|-----------|-----------|-----------|-----------|
 //  |           |           |<-         |v          |->         |           |                       |<-         |v          |^          |->         |           |           |
-    &trans      &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &trans      &reset      &reset      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans      &trans
+    &trans      &trans      U_MS_L      U_MS_D      U_MS_R      &trans      &reset      &reset      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans      &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //  |           |           |           |           |           |           |SETTINGS   |GAME       |HOME       |PAGE DOWN  |PAGE UP    |END        |           |           |
     &trans      &trans      &trans      &trans      &trans      &trans      &to SETTINGS &to GAME   &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans      &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
-//                                      |           |           |           |CTRL       |           |           |           |           |
-                                        &trans      &trans      &trans      &kp LCTRL   &trans      &trans      &trans      &trans
+//                                      |CTRL       |           |m2         |m1         |           |           |           |           |
+                                        &kp LCTRL   &trans      U_BTN2      U_BTN1      &trans      &trans      &trans      &trans
 //                                      |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
             >;
         };
