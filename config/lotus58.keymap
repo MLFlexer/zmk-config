@@ -148,8 +148,8 @@
 //  |           |           |           |           |           |           |SETTINGS   |GAME       |HOME       |PAGE DOWN  |PAGE UP    |END        |           |           |
     &trans      &trans      &trans      &trans      &trans      &trans      &to SETTINGS &to GAME   &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans      &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
-//                                      |CTRL       |           |m2         |m1         |           |           |           |           |
-                                        &kp LCTRL   &trans      U_BTN2      U_BTN1      &trans      &trans      &trans      &trans
+//                                      |CTRL       |           |m1         |m2         |           |           |           |           |
+                                        &kp LCTRL   &trans      U_BTN1      U_BTN2      &trans      &trans      &trans      &trans
 //                                      |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
             >;
         };
