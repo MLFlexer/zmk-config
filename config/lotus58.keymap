@@ -59,7 +59,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <MAIN_KEYS_R>;
+            hold-trigger-key-positions = <MAIN_KEYS_R THUMB_KEYS_L>;
         };
         r_hrm: right_home_row_mod {
             compatible = "zmk,behavior-hold-tap";
@@ -69,7 +69,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <MAIN_KEYS_L>;
+            hold-trigger-key-positions = <MAIN_KEYS_L THUMB_KEYS_R>;
         };
     };
 
@@ -91,14 +91,14 @@
         };
 
         combo_ctrl_shft_c {
-            timeout-ms = <100>;
+            timeout-ms = <250>;
             key-positions = <R_2_2 R_2_1 L_3_3>;
             layers = <0>;
             bindings = <&kp LC(LS(C))>;
         };
 
         combo_ctrl_shft_v {
-            timeout-ms = <100>;
+            timeout-ms = <250>;
             key-positions = <R_2_2 R_2_1 L_3_4>;
             layers = <0>;
             bindings = <&kp LC(LS(V))>;

@@ -1,10 +1,10 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+    - name: mlflexer_zmkfirmware
+      url-base: https://github.com/mlflexer
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: mlflexer_zmkfirmware
       revision: main
       import: app/west.yml
   self:
