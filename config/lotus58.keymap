@@ -146,7 +146,7 @@
     &trans      &trans      U_MS_L      U_MS_D      U_MS_R      &trans      &reset      &reset      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans      &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //  |           |           |           |           |           |           |SETTINGS   |GAME       |HOME       |PAGE DOWN  |PAGE UP    |END        |           |           |
-    &trans      &trans      &trans      &trans      &trans      &trans      &to SETTINGS &to GAME   &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans      &trans
+    &trans      &trans      &trans      &trans      &trans      &trans      &to SETTINGS &tog GAME  &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &trans      &trans
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //                                      |CTRL       |           |m1         |m2         |           |           |           |           |
                                         &kp LCTRL   &trans      U_BTN1      U_BTN2      &trans      &trans      &trans      &trans
@@ -191,7 +191,7 @@
     &kp G       &kp LSHFT   &kp A       &kp S       &kp D       &kp F       &reset      &reset      &kp H       &kp J       &kp K       &kp L       &kp SEMI    &mt RSHFT SQT
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //  |B          |CTRL       |Z          |X          |C          |V          |O          |BASE       |N          |M          |,          |.          |-          |'          |
-    &kp B       &kp LCTRL   &kp Z       &kp X       &kp C       &kp V       &kp O       &to BASE    &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &mt RCTRL BSLH
+    &kp B       &kp LCTRL   &kp Z       &kp X       &kp C       &kp V       &kp O       &tog GAME   &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &mt RCTRL BSLH
 //  |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 //                                      |LALT + Y   |U          |SPACE      |I          |NAV + ENTER|BACKSPACE  |RALT       |TEMP on    |
                                         &mt LALT Y  &kp U       &kp SPACE   &kp I       &lt NAV RET &kp BSPC    &kp RALT    &tog TEMP
