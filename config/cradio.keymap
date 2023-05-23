@@ -33,7 +33,7 @@
         compatible = "zmk,combos";
 				// both left thumb keys
 				combo_settings {
-						timeout-ms = <100>;
+						timeout-ms = <300>;
 						key-positions = <30 31>;
 						bindings = <&mo SYS>;
 				};
