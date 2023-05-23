@@ -67,7 +67,7 @@
         //│ CAPS     │          │          │          │          │   │ HOME     │ PAGE DN  │ PAGE UP  │ END      │  :       │
            &caps_word  &trans     &trans     &trans     &trans         &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp COLON
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp DEL   &kp ESC        &trans     &trans
+                                           &mt DEL RGUI &mt ESC RALT  &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
