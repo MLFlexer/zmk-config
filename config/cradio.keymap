@@ -95,7 +95,7 @@
            &kp _NOT   &kp _DBLQ  &kp _LCBRA &kp _RCBRA  &kp _AND      &kp _PIPE   &kp _LPAR &kp _RPAR   &kp _SQ   &kp _EQ
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ ¤        │  £       │  #       │ $        │  %       │   │ *        │  +       │  ;       │  :       │ _        │
-           &trans &kp _PUND &kp _HASH  &kp _DLR   &kp _PCT        &kp _ASTR  &kp _PLUS &kp _SEMI  &kp _COL   &kp _UNDR
+           &trans &trans &trans  &kp _DLR   &kp _PCT        &kp _ASTR  &kp _PLUS &kp _SEMI  &kp _COL   &kp _UNDR
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &kp DELETE &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
