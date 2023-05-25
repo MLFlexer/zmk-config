@@ -1,3 +1,8 @@
+// ÆØÅ
+#define _AE SEMI
+#define _OE SQT
+#define _AA LBKT
+
 // number row symbols
 #define _LPAR LS(N8) //(
 #define _RPAR LS(N9) //)
