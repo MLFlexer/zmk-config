@@ -1,6 +1,6 @@
  # Layout
+ ![my_keymap(1)](https://github.com/MLFlexer/zmk-config/assets/75012728/60a931f0-0577-4b54-8846-6dbb40ce80c0)
  
- ![my_keymap](https://github.com/MLFlexer/zmk-config/assets/75012728/462f8f7b-4242-47f6-a23e-cb04bd3021f7)
 Generated from: https://github.com/caksoylar/keymap-drawer
 
 ## Keycodes
