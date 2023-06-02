@@ -42,7 +42,7 @@
 				combo_esc {
 						timeout-ms = <300>;
 						key-positions = <4 5>;
-						bindings = <&kp esc>;
+						bindings = <&kp ESC>;
 				};
 				combo_del {
 						timeout-ms = <300>;
