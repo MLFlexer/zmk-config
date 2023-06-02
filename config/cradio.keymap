@@ -39,6 +39,11 @@
 						key-positions = <30 31>;
 						bindings = <&mo SYS>;
 				};
+				combo_esc {
+						timeout-ms = <300>;
+						key-positions = <4 5>;
+						bindings = <&kp esc>;
+				};
     };
 
     conditional_layers {
