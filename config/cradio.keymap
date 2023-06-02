@@ -44,6 +44,11 @@
 						key-positions = <4 5>;
 						bindings = <&kp esc>;
 				};
+				combo_del {
+						timeout-ms = <300>;
+						key-positions = <6 7>;
+						bindings = <&kp DELETE>;
+				};
     };
 
     conditional_layers {
