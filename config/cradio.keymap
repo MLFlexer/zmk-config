@@ -40,13 +40,15 @@
 						bindings = <&mo SYS>;
 				};
 				combo_esc {
-						timeout-ms = <300>;
+						timeout-ms = <250>;
 						key-positions = <3 4>;
+						layers = <0>;
 						bindings = <&kp ESC>;
 				};
 				combo_del {
-						timeout-ms = <300>;
+						timeout-ms = <250>;
 						key-positions = <5 6>;
+						layers = <0>;
 						bindings = <&kp DELETE>;
 				};
     };
