@@ -37,3 +37,4 @@
 #define _PCT LS(N5) // %
 
 #define _TILDE RA(RBKT) // ~
+#define _CARET LS(RBKT) // ^
